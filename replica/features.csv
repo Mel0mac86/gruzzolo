@@ -1,0 +1,31 @@
+feature,area,priority,original,clone,notes
+Add an expense or income with amount category date and note,transactions,must,yes,yes,
+List transactions grouped by day with search,transactions,must,yes,yes,
+Edit and delete a transaction,transactions,must,yes,yes,
+Categories with icon and colour,transactions,must,yes,yes,
+Dashboard with balance income and expenses of the month,dashboard,must,yes,yes,
+Spending by category chart for the month,dashboard,must,yes,yes,
+Monthly budget per category with progress bar,budget,must,yes,yes,
+Alert when a budget is over 80% and over 100%,budget,should,yes,yes,in-app badge
+Switch month backward and forward,dashboard,should,yes,yes,
+Track subscriptions with amount cycle and next renewal,subscriptions,must,yes,yes,
+Monthly and yearly cost of all subscriptions,subscriptions,must,yes,yes,
+Upcoming renewals in the next 7 days,subscriptions,should,yes,yes,
+Pause or cancel a subscription,subscriptions,should,yes,yes,
+Savings goals with target amount and deadline,goals,must,yes,yes,
+Add money to a goal and see progress,goals,must,yes,yes,
+Suggested monthly saving to reach the goal on time,goals,should,yes,yes,
+Investment holdings with quantity and average price,investments,must,yes,yes,
+Portfolio value gain and loss,investments,must,yes,yes,
+Manual price update per holding,investments,should,yes,yes,
+Allocation by asset type,investments,should,yes,yes,
+Data saved on the device,storage,must,yes,yes,AsyncStorage
+Export data as CSV,storage,should,yes,yes,iOS share sheet
+Currency setting,settings,should,yes,yes,EUR default
+Reset all data,settings,should,yes,yes,
+Face ID lock,security,should,yes,no,needs expo-local-authentication in a dev build
+Push reminders for renewals,notifications,should,yes,no,needs expo-notifications and a dev build
+Live market prices,investments,could,yes,no,needs a market data API key from the user
+Bank account sync,integrations,could,yes,skip,needs a licensed open banking provider (PSD2) contract
+Cloud sync across devices,storage,could,yes,no,replica-backend phase
+Dark mode,design,could,yes,yes,follows the system setting
